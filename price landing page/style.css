@@ -136,4 +136,77 @@ footer{
     font-size: 1.2rem;
     font-weight: bolder;
     margin: 12px 0;
+
+}
+
+/*Adding some hover effects*/
+
+nav {
+  padding: 15px 50px;
+  border-bottom: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+}
+
+
+.logo {
+  font-size: 22px;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: #c0392b;
+  transform: scale(1.05);
+}
+
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  padding: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover underline effect */
+.navbar li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e74c3c;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar li:hover::after {
+  width: 100%;
+}
+
+.navbar li:hover {
+  color: #e74c3c;
+}
+
+.btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
